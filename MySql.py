@@ -1,7 +1,7 @@
 import mysql.connector as MySQL
 
 
-c =  MySQL.connect(user = 'root',password='s0ulfly1978',auth_plugin="mysql_native_password")
+c =  MySQL.connect(user = 'user',password='password',auth_plugin="mysql_native_password")
 cr = c.cursor()
 cr.execute("CREATE DATABASE IF NOT EXISTS QuizMaker")
 c.close()
