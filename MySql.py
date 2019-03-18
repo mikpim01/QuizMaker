@@ -6,7 +6,7 @@ cr = c.cursor()
 cr.execute("CREATE DATABASE IF NOT EXISTS QuizMaker")
 c.close()
 try:
-    con = MySQL.connect(user = 'root',password='s0ulfly1978',auth_plugin="mysql_native_password",database='QuizMaker')
+    con = MySQL.connect(user = 'user',password='password',auth_plugin="mysql_native_password",database='QuizMaker')
     cursor = con.cursor()
     cursor.execute("CREATE TABLE IF NOT EXISTS Answer(AnsID INT AUTO_INCREMENT PRIMARY KEY,Ans TEXT)")
     cursor.execute("CREATE TABLE IF NOT EXISTS Question(QsID INT AUTO_INCREMENT PRIMARY KEY,Qs TEXT,QsA TEXT,QsB TEXT,QsC TEXT,QsD TEXT,AnsID INT,FOREIGN KEY (AnsID) REFERENCES Answer(AnsID))")
