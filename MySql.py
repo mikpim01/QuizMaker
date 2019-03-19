@@ -39,7 +39,7 @@ class Question():
 class mysql():
 
     def __init__(self):
-        self.con = MySQL.connect(user='root',password = "s0ulfly1978",auth_plugin="mysql_native_password",database = "QuizMaker")
+        self.con = MySQL.connect(user='user',password = "password",auth_plugin="mysql_native_password",database = "QuizMaker")
         self.cursor = self.con.cursor()
         print("Don't forget to unlik mysql object. If you dont unlink it connection won't close!\n")
 
